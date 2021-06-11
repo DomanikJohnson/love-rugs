@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D1EE9444267026E1000430AE /* love_rugsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE9443267026E1000430AE /* love_rugsApp.swift */; };
-		D1EE9446267026E1000430AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE9445267026E1000430AE /* ContentView.swift */; };
+		D1EE9446267026E1000430AE /* ShoppingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE9445267026E1000430AE /* ShoppingItemView.swift */; };
 		D1EE9448267026E5000430AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE9447267026E5000430AE /* Assets.xcassets */; };
 		D1EE944B267026E5000430AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE944A267026E5000430AE /* Preview Assets.xcassets */; };
 		D1EE945426702F54000430AE /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = D1EE945326702F54000430AE /* Data.json */; };
+		D1EE945A26703637000430AE /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945926703637000430AE /* ShoppingItem.swift */; };
+		D1EE945C26716C02000430AE /* ShoppingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945B26716C02000430AE /* ShoppingItemModel.swift */; };
+		D1EE945F26741049000430AE /* ShoppingItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945E26741049000430AE /* ShoppingItemService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1EE9440267026E1000430AE /* love-rugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "love-rugs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE9443267026E1000430AE /* love_rugsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_rugsApp.swift; sourceTree = "<group>"; };
-		D1EE9445267026E1000430AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1EE9445267026E1000430AE /* ShoppingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemView.swift; sourceTree = "<group>"; };
 		D1EE9447267026E5000430AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EE944A267026E5000430AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1EE944C267026E5000430AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EE945326702F54000430AE /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		D1EE945926703637000430AE /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		D1EE945B26716C02000430AE /* ShoppingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemModel.swift; sourceTree = "<group>"; };
+		D1EE945E26741049000430AE /* ShoppingItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		D1EE9442267026E1000430AE /* love-rugs */ = {
 			isa = PBXGroup;
 			children = (
+				D1EE945D26740FF9000430AE /* Services */,
+				D1EE945826703216000430AE /* Models */,
+				D1EE945726703130000430AE /* Views */,
+				D1EE945526703108000430AE /* ViewModels */,
 				D1EE945226702ED1000430AE /* Data */,
 				D1EE9443267026E1000430AE /* love_rugsApp.swift */,
-				D1EE9445267026E1000430AE /* ContentView.swift */,
 				D1EE9447267026E5000430AE /* Assets.xcassets */,
 				D1EE944C267026E5000430AE /* Info.plist */,
 				D1EE9449267026E5000430AE /* Preview Content */,
@@ -78,6 +87,38 @@
 				D1EE945326702F54000430AE /* Data.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		D1EE945526703108000430AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE945B26716C02000430AE /* ShoppingItemModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D1EE945726703130000430AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE9445267026E1000430AE /* ShoppingItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1EE945826703216000430AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE945926703637000430AE /* ShoppingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1EE945D26740FF9000430AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE945E26741049000430AE /* ShoppingItemService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EE9446267026E1000430AE /* ContentView.swift in Sources */,
+				D1EE945A26703637000430AE /* ShoppingItem.swift in Sources */,
+				D1EE9446267026E1000430AE /* ShoppingItemView.swift in Sources */,
+				D1EE945C26716C02000430AE /* ShoppingItemModel.swift in Sources */,
 				D1EE9444267026E1000430AE /* love_rugsApp.swift in Sources */,
+				D1EE945F26741049000430AE /* ShoppingItemService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
