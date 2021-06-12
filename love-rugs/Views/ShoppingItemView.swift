@@ -10,6 +10,7 @@ import SwiftUI
 struct ShoppingItemView: View {
     @State var starcol = "star.fill"
     @State var starState = false
+    @ObservedObject var model = ShoppingItemModel()
     
     var body: some View {
         VStack{
@@ -17,10 +18,28 @@ struct ShoppingItemView: View {
                     .font(.largeTitle)
                     .bold()
             Spacer()
+            GeometryReader { geo in
+            NavigationView {
+            ScrollView{
+                    ForEach(model.shoppingItemsArr) { item in
+                      
+                            Rectangle()
+                                .frame(width: geo.size.width - 45, height: geo.size.width - 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .background(Color.red)
+                        
+//                        Text(item.title)
+//                            .font(.title2)
+//                            .bold()
+                        
+                           
+                    }
+                    }
+                }
+               
+            }
             
-            
+    
         }
-
     }
 }
 

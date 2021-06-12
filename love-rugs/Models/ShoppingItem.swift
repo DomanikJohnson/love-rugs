@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ShoppingItem {
+struct ShoppingItem: Decodable, Identifiable {
     
     var title = ""
     var author = ""

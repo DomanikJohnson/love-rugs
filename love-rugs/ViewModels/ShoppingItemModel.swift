@@ -8,9 +8,9 @@
 import Foundation
 
 
-class ShoppingItemModel {
+class ShoppingItemModel:ObservableObject {
     // Array of shopping items
-    var shoppingItemsArr = [ShoppingItem]()
+   @Published var shoppingItemsArr = [ShoppingItem]()
     
     init() {
         // Setting value of shopping item from json
