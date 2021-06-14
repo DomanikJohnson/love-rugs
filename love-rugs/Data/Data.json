@@ -1,5 +1,6 @@
 [
     {
+        "image": "cover1",
         "title": "Amazing Words",
         "author": "Sir Prise Party",
         "isFavourite": false,
@@ -35,6 +36,7 @@
         ]
     },
     {
+        "image": "cover2",
         "title": "Literature For Reading",
         "author": "Sir Lee Oldman",
         "isFavourite": false,
@@ -69,7 +71,7 @@
             "Cras ut turpis lectus. Cras pharetra quam vitae blandit fringilla. Sed id odio pharetra, ultricies ex a, scelerisque ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus commodo massa turpis, nec tempus nulla egestas sed. Pellentesque ut aliquet lacus. Duis eu justo quis risus laoreet cursus in eu odio. Ut et maximus metus, id vehicula orci. Vestibulum a ante iaculis, molestie urna sit amet, posuere ipsum. Nulla vehicula est ac arcu sollicitudin tristique. Etiam id bibendum justo. Pellentesque eu iaculis felis, sed volutpat ex. Proin commodo porttitor fringilla.\n\nNunc molestie, dolor sed elementum gravida, arcu mauris hendrerit libero, id convallis risus nibh a quam. Pellentesque tincidunt vel erat fermentum accumsan. Ut felis nibh, pellentesque vitae nisi et, facilisis fermentum lacus. Sed efficitur dolor quis leo dignissim fermentum. Sed sed elit lacus. Aliquam eget sem eget enim luctus efficitur et ac urna. Integer rutrum facilisis eros quis congue. Mauris eu mollis justo, quis semper sem. Quisque sem lectus, sagittis nec dui ac, viverra tristique sapien. Nam vehicula nisl nulla, eu faucibus nulla suscipit sit amet. Nam at purus nisl."
         ]
     },
-    {
+    {   "image": "cover3",
         "title": "Text and More",
         "author": "Sir Vey Sample",
         "isFavourite": false,
@@ -105,6 +107,7 @@
         ]
     },
     {
+        "image": "cover4",
         "title": "Characters, Words, and Paragraphs",
         "author": "Sir Cull K",
         "isFavourite": false,
@@ -140,6 +143,7 @@
         ]
     },
     {
+        "image": "cover5",
         "title": "A Book, I Think",
         "author": "Sir Vivor Island",
         "isFavourite": false,

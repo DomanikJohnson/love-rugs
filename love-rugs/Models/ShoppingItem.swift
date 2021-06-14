@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ShoppingItem: Decodable, Identifiable {
     
+    var image = ""
     var title = ""
     var author = ""
     var isFavourite = false
@@ -18,4 +20,10 @@ struct ShoppingItem: Decodable, Identifiable {
     var content:[String] = []
     
     
+}
+
+struct ShoppingItem_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
 }

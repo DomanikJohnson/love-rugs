@@ -16,4 +16,9 @@ class ShoppingItemModel:ObservableObject {
         // Setting value of shopping item from json
        shoppingItemsArr = ShoppingItemService.getShoppingItemJson()
     }
+    
+    
+    func pages() {
+        print("Hello ww=rel")
+    }
 }

@@ -13,7 +13,7 @@ struct ShoppingItemView: View {
     @ObservedObject var model = ShoppingItemModel()
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
                 Text("My Library")
                     .font(.largeTitle)
                     .bold()
@@ -21,19 +21,41 @@ struct ShoppingItemView: View {
             GeometryReader { geo in
             NavigationView {
             ScrollView{
+                Spacer()
+              
                     ForEach(model.shoppingItemsArr) { item in
-                      
-                            Rectangle()
-                                .frame(width: geo.size.width - 45, height: geo.size.width - 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .background(Color.red)
-                        
-//                        Text(item.title)
-//                            .font(.title2)
-//                            .bold()
-                        
-                           
-                    }
-                    }
+                        NavigationLink(
+                            destination: ShoppingItemSingleView(shoppingItem: item),
+                            label: {
+                                
+                                // MARK: Row Item
+                                ZStack {
+                                    Rectangle()
+                                        .foregroundColor(.white)
+                                        .frame(width: geo.size.width - 45, height: geo.size.width + 75 , alignment: .center)
+                                        .cornerRadius(20)
+                                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 2, x: 1, y: 1)
+                                   
+                                    VStack() {
+                                    
+                                        Text(item.title)
+                                            .bold()
+                                            .foregroundColor(.black)
+                                           
+                                            Text(item.author)
+                                                .bold()
+                                                .foregroundColor(.black)
+                                        Image(item.image)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: geo.size.width - 0 , height: 330, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                            .clipped()
+                                    }
+                              
+                                }
+                            })
+              
+            }.navigationBarHidden(true)
                 }
                
             }
@@ -69,3 +91,4 @@ struct ShoppingItemView_Previews: PreviewProvider {
 //                    .resizable()
 //                    .scaledToFit()
 //                    .foregroundColor(.yellow)            })
+}

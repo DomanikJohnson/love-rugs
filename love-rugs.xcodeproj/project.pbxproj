@@ -15,6 +15,7 @@
 		D1EE945A26703637000430AE /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945926703637000430AE /* ShoppingItem.swift */; };
 		D1EE945C26716C02000430AE /* ShoppingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945B26716C02000430AE /* ShoppingItemModel.swift */; };
 		D1EE945F26741049000430AE /* ShoppingItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE945E26741049000430AE /* ShoppingItemService.swift */; };
+		D1EE946126751830000430AE /* ShoppingItemSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE946026751830000430AE /* ShoppingItemSingleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D1EE945926703637000430AE /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		D1EE945B26716C02000430AE /* ShoppingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemModel.swift; sourceTree = "<group>"; };
 		D1EE945E26741049000430AE /* ShoppingItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemService.swift; sourceTree = "<group>"; };
+		D1EE946026751830000430AE /* ShoppingItemSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemSingleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D1EE9445267026E1000430AE /* ShoppingItemView.swift */,
+				D1EE946026751830000430AE /* ShoppingItemSingleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EE945A26703637000430AE /* ShoppingItem.swift in Sources */,
+				D1EE946126751830000430AE /* ShoppingItemSingleView.swift in Sources */,
 				D1EE9446267026E1000430AE /* ShoppingItemView.swift in Sources */,
 				D1EE945C26716C02000430AE /* ShoppingItemModel.swift in Sources */,
 				D1EE9444267026E1000430AE /* love_rugsApp.swift in Sources */,
