@@ -1,14 +1,13 @@
 //
-//  ShoppingItem.swift
+//  ShoppingItem.swiftr.swift
 //  love-rugs
 //
-//  Created by Domanik Johnson on 6/8/21.
+//  Created by Domanik Johnson on 6/14/21.
 //
 
 import Foundation
-import SwiftUI
 
-struct ShoppingItem: Decodable, Identifiable {
+class ShoppingItem: Decodable, Identifiable {
     
     var image = ""
     var title = ""
@@ -20,10 +19,4 @@ struct ShoppingItem: Decodable, Identifiable {
     var content:[String] = []
     
     
-}
-
-struct ShoppingItem_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
 }

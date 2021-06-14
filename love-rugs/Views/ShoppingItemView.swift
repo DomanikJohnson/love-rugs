@@ -14,9 +14,6 @@ struct ShoppingItemView: View {
     
     var body: some View {
         VStack(alignment: .leading){
-                Text("My Library")
-                    .font(.largeTitle)
-                    .bold()
             Spacer()
             GeometryReader { geo in
             NavigationView {
@@ -38,9 +35,20 @@ struct ShoppingItemView: View {
                                    
                                     VStack() {
                                     
-                                        Text(item.title)
-                                            .bold()
-                                            .foregroundColor(.black)
+                                        HStack {
+                                            Text(item.title)
+                                                .bold()
+                                                .foregroundColor(.black)
+                                            if(true) {
+                                                Text(String(item.isFavourite))
+                                            Image(systemName: "star")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 25, height: 25, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                            }
+                                            
+                                        }
+                                        
                                            
                                             Text(item.author)
                                                 .bold()
@@ -55,8 +63,10 @@ struct ShoppingItemView: View {
                                 }
                             })
               
-            }.navigationBarHidden(true)
-                }
+                    }.navigationBarTitleDisplayMode(.automatic)
+                    .navigationBarTitle("My Library")
+                    
+            }
                
             }
             

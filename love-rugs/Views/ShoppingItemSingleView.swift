@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ShoppingItemSingleView: View {
-    var p = ShoppingItemModel()
+    @ObservedObject var p = ShoppingItemModel()
     
     var shoppingItem: ShoppingItem
-    var star = "star"
+    @State var star = "star"
     @State var pick: Int = 2
+    
+    
     var body: some View {
         VStack{
+        
             Text(shoppingItem.title)
                 .bold()
                 .font(.largeTitle)
@@ -23,7 +26,9 @@ struct ShoppingItemSingleView: View {
             Spacer()
             Text("Read Now")
             Spacer()
-            Button(action:p.pages , label: {
+            Button(action:{
+                p.pages(forid: shoppingItem.id)
+            }, label: {
             Image(shoppingItem.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -32,12 +37,21 @@ struct ShoppingItemSingleView: View {
             
             Text("Mark Later!")
             Spacer()
-     
+            
                 Image(systemName: star)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(.yellow)
                     .frame(width: 25, height: 25, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                    .onTapGesture {
+                        p.page(forid: shoppingItem.id)
+                    
+
+                    
+
+                        
+                    }
                 
            
             
@@ -45,21 +59,25 @@ struct ShoppingItemSingleView: View {
                 .font(.caption)
             
             VStack {
+                
                 Picker("", selection: $pick) {
                     Text("1").tag(1)
                     Text("2").tag(2)
                     Text("3").tag(3)
                     Text("4").tag(4)
                     Text("5").tag(5)
-                }
-                Spacer()
+                        
+                }.pickerStyle(SegmentedPickerStyle())
                 
-          
-
-            }   .pickerStyle(SegmentedPickerStyle())
-                .frame(width: 200)
-
+             
+                
             
+                Spacer()
+                Text(String(pick))
+                
+                Spacer()
+
+            }
 
     
     }
